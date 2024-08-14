@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import Settings from "./components/template/settings";
 
 const App = () => {
   return (
-    <div>
-      Resume Project
+    <div className="dark:bg-darker bg-lighter h-[100vh]">
+      <Settings />
     </div>
   );
 };
