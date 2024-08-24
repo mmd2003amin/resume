@@ -8,6 +8,6 @@
   }
 
   .theme-buttons button {
-    @apply centering w-fit p-2 mx-auto mb-2 rounded-md cursor-pointer bg-lighter  hover:text-lighter transition-all;
+    @apply centering w-fit p-2 mx-auto mb-2 rounded-md cursor-pointer hover:text-lighter transition-all;
   }
 }

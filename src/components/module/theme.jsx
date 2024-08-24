@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 
 const Theme = () => {
   const [theme, setTheme] = useState("dark");
   const element = document.documentElement;
+  const { t } = useTranslation();
 
   useEffect(() => {
     switch (theme) {
@@ -18,17 +20,24 @@ const Theme = () => {
 
   return (
     <div className="mb-8">
-      <h3 className="mb-3">Theme :</h3>
+      <h3 className="mb-3">{t("theme")} :</h3>
       <div className="centering flex-wrap justify-between theme-buttons">
-        <button onClick={() => setTheme("dark")} className="hover:bg-darker">
-          <span className="mr-2">dark</span>
+        <button
+          onClick={() => setTheme("dark")}
+          className={`${
+            theme === "dark" ? "bg-darker text-lighter" : "bg-lighter"
+          } hover:bg-darker`}
+        >
+          <span className="mr-2">{t("dark")}</span>
           <IoMoonOutline />
         </button>
         <button
           onClick={() => setTheme("light")}
-          className="hover:bg-[#0FCAE8]"
+          className={`${
+            theme === "light" ? "bg-[#0fcae8] text-lighter" : "bg-lighter"
+          } hover:bg-[#0fcae8]`}
         >
-          <span className="mr-2">light</span>
+          <span className="mr-2">{t("light")}</span>
           <IoSunnyOutline />
         </button>
       </div>
