@@ -7,6 +7,8 @@ export default {
       colors: {
         darker: "#232324",
         lighter: "#e5e7ed",
+        darkBox: "#343539",
+        blueText: "#0d6efd",
       },
 
       screens: {

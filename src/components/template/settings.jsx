@@ -12,8 +12,8 @@ const Settings = ({ update }) => {
     <div className="text-darker">
       <div
         onClick={() => setOpenSettings((prev) => !prev)}
-        className={`bg-white rounded-lg cursor-pointer fixed top-6 ${
-          language === "fa" ? "right-6" : "left-6"
+        className={`bg-white rounded-lg cursor-pointer fixed top-4 ${
+          language === "fa" ? "right-4" : "left-4"
         }`}
       >
         <IoSettingsOutline className="size-10 p-2 hover:rotate-180 duration-1000" />
@@ -22,7 +22,7 @@ const Settings = ({ update }) => {
       <div
         className={`${
           openSettings ? "visible opacity-100" : "invisible opacity-0 scale-50"
-        } duration-150 bg-white rounded-md h-fit w-[70%] 300:w-52 p-3 fixed top-6 ${
+        } z-10 duration-150 bg-white rounded-md h-fit w-[70%] 300:w-52 p-3 fixed top-6 ${
           language === "fa" ? "right-[4.5rem]" : "left-[4.5rem]"
         }`}
       >
