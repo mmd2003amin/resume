@@ -10,4 +10,12 @@
   .theme-buttons button {
     @apply centering w-fit p-2 mx-auto mb-2 rounded-md cursor-pointer hover:text-lighter transition-all;
   }
+
+  .line {
+    @apply w-0.5 h-24 bg-blueText rounded-md mx-auto my-2;
+  }
+
+  .pagination-buttons svg {
+    @apply border border-blueText text-blueText hover:text-white hover:bg-blueText duration-150 cursor-pointer rounded-lg p-1.5 size-9 my-1;
+  }
 }
