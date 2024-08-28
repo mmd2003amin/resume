@@ -13,7 +13,7 @@ const RightBar = () => {
           alt="profile"
           className="rounded-full size-16 mx-auto mb-1"
         />
-        <span className="text-black dark:text-white text-[12px] centering">
+        <span className="font-kalameh-bold text-black dark:text-white text-[12px] centering">
           {t("name")}
         </span>
       </div>

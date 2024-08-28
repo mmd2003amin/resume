@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import Settings from "./components/template/settings";
 import i18n from "./i18n";
 import Sections from "./components/template/Sections";
+import Loader from "./components/template/loader";
 
 const App = () => {
   const lng = i18n.language;
@@ -10,8 +11,9 @@ const App = () => {
   return (
     <div
       dir={`${lng === "fa" ? "rtl" : "ltr"}`}
-      className="dark:bg-darker bg-lighter h-[100vh]"
+      className="font-kalameh-regular dark:bg-darker bg-lighter h-[100vh]"
     >
+      <Loader />
       <Settings update={forceUpdate} />
       <Sections />
     </div>

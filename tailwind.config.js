@@ -3,6 +3,11 @@ export default {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      "kalameh-black": "kalameh-black",
+      "kalameh-bold": "kalameh-bold",
+      "kalameh-regular": "kalameh-regular",
+    },
     extend: {
       colors: {
         darker: "#232324",
@@ -13,6 +18,33 @@ export default {
 
       screens: {
         300: "320px",
+      },
+
+      animation: {
+        "loader-left": "loader-left 1s forwards",
+        "loader-right": "loader-right 1s forwards",
+        "bg-loader": "bg-loader 0.7s forwards",
+      },
+
+      keyframes: {
+        "bg-loader": {
+          "0%": { display: "fixed" },
+          "100%": { display: "none" },
+        },
+
+        "loader-left": {
+          "0%": { height: "0%" },
+          "70%": { height: "100%", width: "50%" },
+          "99%": { width: "0" },
+          "100%": { width: "0", display: "none" },
+        },
+
+        "loader-right": {
+          "0%": { height: "0%" },
+          "70%": { height: "100%", width: "50%" },
+          "99%": { width: "0" },
+          "100%": { width: "0", display: "none" },
+        },
       },
     },
   },

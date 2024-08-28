@@ -18,11 +18,11 @@ const Calendar = () => {
 
   return (
     <div className="centering flex-col text-black dark:text-white">
-      <h1 className="text-blueText">
+      <h1 className="text-blueText font-kalameh-bold">
         {lng === "fa" ? today(dateFa).dayWeek : today(dateEn).dayWeek}
       </h1>
 
-      <p className="text-blueText my-1">
+      <p className="text-blueText my-1 font-kalameh-bold">
         {removeZero(lng === "fa" ? today(dateFa).day : today(dateEn).day)}
       </p>
 

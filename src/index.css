@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "kalameh-black";
+    src: url("./fonts/kalameh/Kalameh-Black.ttf");
+  }
+
+  @font-face {
+    font-family: "kalameh-bold";
+    src: url("./fonts/kalameh/Kalameh-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "kalameh-regular";
+    src: url("./fonts/kalameh/Kalameh-Regular.ttf");
+  }
+}
+
 @layer components {
   .centering {
     @apply flex items-center justify-center;
@@ -17,5 +34,9 @@
 
   .pagination-buttons svg {
     @apply border border-blueText text-blueText hover:text-white hover:bg-blueText duration-150 cursor-pointer rounded-lg p-1.5 size-9 my-1;
+  }
+
+  .loader {
+    @apply w-1/2 bg-darkBox fixed top-0 bottom-0 my-auto border-[#ffffff44] z-10;
   }
 }
