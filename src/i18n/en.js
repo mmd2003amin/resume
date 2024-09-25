@@ -8,7 +8,8 @@ const en = {
   aboutMe : "aboutMe",
   projects : "projects",
   contactMe : "contactMe",
-  skills : "skills"
+  skills : "skills",
+  resume : "resume"
 };
 
 export default en;

@@ -12,7 +12,7 @@ const Settings = ({ update }) => {
     <div className="text-darker">
       <div
         onClick={() => setOpenSettings((prev) => !prev)}
-        className={`bg-white rounded-lg cursor-pointer fixed top-4 ${
+        className={`bg-white shadow-settings rounded-lg cursor-pointer fixed top-4 z-20 ${
           language === "fa" ? "right-4" : "left-4"
         }`}
       >
@@ -20,7 +20,7 @@ const Settings = ({ update }) => {
       </div>
 
       <div
-        className={`${
+        className={`z-40 shadow-settings ${
           openSettings ? "visible opacity-100" : "invisible opacity-0 scale-50"
         } z-10 duration-150 bg-white rounded-md h-fit w-[70%] 300:w-52 p-3 fixed top-6 ${
           language === "fa" ? "right-[4.5rem]" : "left-[4.5rem]"

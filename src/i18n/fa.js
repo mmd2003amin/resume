@@ -8,7 +8,8 @@ const fa = {
   aboutMe : "درباره من",
   projects : "پروژه ها",
   contactMe : "تماس با من",
-  skills : "مهارت ها"
+  skills : "مهارت ها",
+  resume : "رزومه"
 };
 
 export default fa;

@@ -13,11 +13,16 @@ export default {
         darker: "#232324",
         lighter: "#e5e7ed",
         darkBox: "#343539",
+        darkBox2: "#535455",
         blueText: "#0d6efd",
       },
 
       screens: {
         300: "320px",
+      },
+
+      boxShadow : {
+        settings : "0 0 5px 1px rgba(0, 0, 0, 0.1);"
       },
 
       animation: {

@@ -3,6 +3,7 @@ import Settings from "./components/template/settings";
 import i18n from "./i18n";
 import Sections from "./components/template/Sections";
 import Loader from "./components/template/loader";
+import Menu from "./components/template/menu";
 
 const App = () => {
   const lng = i18n.language;
@@ -15,6 +16,7 @@ const App = () => {
     >
       <Loader />
       <Settings update={forceUpdate} />
+      <Menu />
       <Sections />
     </div>
   );
