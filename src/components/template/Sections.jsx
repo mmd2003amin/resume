@@ -5,7 +5,7 @@ import LeftBar from "./leftBar";
 
 const Sections = () => {
   return (
-    <div className="pt-12 centering h-[38rem] w-[88%] mx-auto">
+    <div className="p-4 lg:p-0 lg:pt-12 centering h-full lg:h-[38rem] w-full lg:w-[88%] mx-auto">
       <RightBar />
       <Main />
       <LeftBar />

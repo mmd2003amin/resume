@@ -12,8 +12,8 @@ const Settings = ({ update }) => {
     <div className="text-darker">
       <div
         onClick={() => setOpenSettings((prev) => !prev)}
-        className={`bg-white shadow-settings rounded-lg cursor-pointer fixed top-4 z-20 ${
-          language === "fa" ? "right-4" : "left-4"
+        className={`bg-white shadow-settings rounded-lg cursor-pointer fixed top-5 lg:top-4 z-20 ${
+          language === "fa" ? "right-5 lg:right-4" : "left-5 lg:left-4"
         }`}
       >
         <IoSettingsOutline className="size-10 p-2 hover:rotate-180 duration-1000" />

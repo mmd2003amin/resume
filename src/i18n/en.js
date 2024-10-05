@@ -9,7 +9,10 @@ const en = {
   projects : "projects",
   contactMe : "contactMe",
   skills : "skills",
-  resume : "resume"
+  resume : "resume",
+  FrontendProgrammer : "Frontend programmer",
+  welcome1 : "Hello, my name is",
+  welcome2 : "Welcome to my world!"
 };
 
 export default en;

@@ -6,7 +6,7 @@ const RightBar = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white dark:bg-darkBox rounded-xl p-2 pb-4 h-full w-[9%] grid grid-cols-1">
+    <div className="hidden lg:grid grid-cols-1 bg-white dark:bg-darkBox rounded-xl p-2 pb-4 h-full w-[9%]">
       <div>
         <img
           src="/profile.jpg"

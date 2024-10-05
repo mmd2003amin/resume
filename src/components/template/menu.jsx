@@ -16,7 +16,7 @@ const Menu = () => {
       <div
         onClick={() => setOpenMenu((prev) => !prev)}
         className={`lg:hidden shadow-settings bg-lighter dark:bg-darkBox2 p-2 h-10 rounded-lg cursor-pointer fixed top-16 z-20 ${
-          language === "fa" ? "right-4" : "left-4"
+          language === "fa" ? "right-5" : "left-5"
         }`}
       >
         <IoMenuSharp
@@ -32,7 +32,7 @@ const Menu = () => {
           openMenu ? "left-0" : "left-full"
         }`}
       >
-        <div className="size-[98%] bg-white dark:bg-darkBox absolute top-[1%] right-[1%] rounded-xl overflow-auto py-4">
+        <div className="size-[96%] bg-white dark:bg-darkBox absolute top-[3%] right-[2%] rounded-xl overflow-auto py-4">
           <div className="mt-4">
             <img
               src="/profile.jpg"

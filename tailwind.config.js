@@ -21,8 +21,8 @@ export default {
         300: "320px",
       },
 
-      boxShadow : {
-        settings : "0 0 5px 1px rgba(0, 0, 0, 0.1);"
+      boxShadow: {
+        settings: "0 0 5px 1px rgba(0, 0, 0, 0.1);",
       },
 
       animation: {
@@ -41,14 +41,14 @@ export default {
           "0%": { height: "0%" },
           "70%": { height: "100%", width: "50%" },
           "99%": { width: "0" },
-          "100%": { width: "0", display: "none" },
+          "100%": { height: "100%", width: "0", display: "none" },
         },
 
         "loader-right": {
           "0%": { height: "0%" },
           "70%": { height: "100%", width: "50%" },
           "99%": { width: "0" },
-          "100%": { width: "0", display: "none" },
+          "100%": { height: "100%", width: "0", display: "none" },
         },
       },
     },
