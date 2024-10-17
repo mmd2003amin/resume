@@ -29,6 +29,8 @@ export default {
         "loader-left": "loader-left 1s forwards",
         "loader-right": "loader-right 1s forwards",
         "bg-loader": "bg-loader 0.7s forwards",
+        nextPage: "nextPage 1s forwards",
+        previousPage: "previousPage 1s forwards",
       },
 
       keyframes: {
@@ -49,6 +51,18 @@ export default {
           "70%": { height: "100%", width: "50%" },
           "99%": { width: "0" },
           "100%": { height: "100%", width: "0", display: "none" },
+        },
+
+        nextPage: {
+          "0%": { bottom: "650px", transform: "scale(0.7)" },
+          "50%": { bottom: "0", transform: "scale(0.7)" },
+          "100%": { bottom: "0", transform: "scale(1)" },
+        },
+
+        previousPage: {
+          "0%": { bottom: "0", transform: "scale(1)" },
+          "50%": { bottom: "0", transform: "scale(0.7)" },
+          "100%": { bottom: "-650px", transform: "scale(0.7)" },
         },
       },
     },

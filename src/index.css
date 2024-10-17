@@ -20,6 +20,9 @@
 }
 
 @layer components {
+  .fdv {
+    /* transform: rotateX(90deg) */
+  }
   .centering {
     @apply flex items-center justify-center;
   }
@@ -39,4 +42,25 @@
   .loader {
     @apply w-1/2 bg-darkBox fixed top-0 bottom-0 my-auto border-[#ffffff44] z-10;
   }
+
+  .main-pages-container {
+    @apply absolute bg-white dark:bg-darkBox rounded-xl p-3 w-full h-full;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-container div::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .scroll-container div::-webkit-scrollbar-track {
+    @apply m-5 p-4 bg-darkBox2 rounded-lg 
+  }
+  
+  .scroll-container div::-webkit-scrollbar-thumb {
+    @apply bg-blueText rounded-lg
+}
+
 }

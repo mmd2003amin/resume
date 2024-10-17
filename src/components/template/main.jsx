@@ -1,15 +1,17 @@
 import React from "react";
 import Pagination from "../module/pagination";
 import Home from "../module/home";
+import AboutMe from "../module/aboutMe";
 
-const Main = () => {
+const Main = ({ namePage, animate }) => {
   return (
-    <div className="bg-white dark:bg-darkBox rounded-xl p-3 h-full w-full lg:w-[82%] lg:mx-1.5">
-      <div className="lg:hidden absolute bottom-4 right-5">
+    <div className="h-full w-full lg:w-[82%] relative mx-1">
+      <div className="lg:hidden absolute bottom-1 right-1 z-[1]">
         <Pagination />
       </div>
 
-      <Home />
+      {namePage === "home" && <Home animate={animate} />}
+      {namePage === "aboutMe" && <AboutMe animate={animate} />}
     </div>
   );
 };

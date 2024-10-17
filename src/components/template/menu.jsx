@@ -6,17 +6,23 @@ import { useTranslation } from "react-i18next";
 import pages from "../../constant/pages";
 import contactIcons from "../../constant/contactIcons";
 
-const Menu = () => {
+const Menu = ({ setNamePage, setAnimate, animate }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const language = i18n.language;
   const { t } = useTranslation();
+
+  const changePageHandler = (name) => {
+    setAnimate(name);
+    setTimeout(() => setNamePage(name), 800);
+    setOpenMenu(false);
+  };
 
   return (
     <div>
       <div
         onClick={() => setOpenMenu((prev) => !prev)}
-        className={`lg:hidden shadow-settings bg-lighter dark:bg-darkBox2 p-2 h-10 rounded-lg cursor-pointer fixed top-16 z-20 ${
-          language === "fa" ? "right-5" : "left-5"
+        className={`lg:hidden shadow-settings bg-lighter dark:bg-darkBox2 p-2 h-10 rounded-lg cursor-pointer fixed top-[68px] z-20 ${
+          language === "fa" ? "right-6" : "left-6"
         }`}
       >
         <IoMenuSharp
@@ -28,7 +34,7 @@ const Menu = () => {
       </div>
 
       <div
-        className={`lg:hidden size-full bg-lighter dark:bg-darker fixed z-10 duration-200 ${
+        className={`lg:hidden w-full h-[100vh] mb-5 bg-lighter dark:bg-darker fixed top-0 z-10 duration-200 ${
           openMenu ? "left-0" : "left-full"
         }`}
       >
@@ -46,7 +52,11 @@ const Menu = () => {
 
           <div className="grid grid-cols-3 mt-10">
             {pages.map((page) => (
-              <div key={page.name} className="centering flex-col mb-10">
+              <div
+                onClick={() => changePageHandler(page.name)}
+                key={page.name}
+                className="centering flex-col mb-10"
+              >
                 <i className="mb-1 text-xl text-blueText">{page.icon}</i>
                 <span className={`text-black dark:text-white text-sm`}>
                   {t(page.name)}

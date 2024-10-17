@@ -3,7 +3,6 @@ import Settings from "./components/template/settings";
 import i18n from "./i18n";
 import Sections from "./components/template/Sections";
 import Loader from "./components/template/loader";
-import Menu from "./components/template/menu";
 
 const App = () => {
   const lng = i18n.language;
@@ -12,11 +11,10 @@ const App = () => {
   return (
     <div
       dir={`${lng === "fa" ? "rtl" : "ltr"}`}
-      className="font-kalameh-regular dark:bg-darker bg-lighter h-[100vh]"
+      className="scroll-container font-kalameh-regular dark:bg-darker bg-lighter h-[100vh]"
     >
       <Loader />
       <Settings update={forceUpdate} />
-      <Menu />
       <Sections />
     </div>
   );
